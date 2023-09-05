@@ -1,0 +1,21 @@
+{
+  "name": "StulipanDateRangePicker",
+  "version": "1.0.0",
+  "description": "A standalone date range picker component.",
+  "main": "daterangepicker.js",
+  "style": "daterangepicker.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dangrossman/daterangepicker.git"
+  },
+  "author": {
+    "name": "Liviu Chioran"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.9.0"
+  }
+}
