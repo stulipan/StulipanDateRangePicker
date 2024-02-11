@@ -2367,7 +2367,9 @@
     // // NodeList.prototype.daterangepicker = initDrp;
     // HTMLCollection.prototype.daterangepicker = NodeList.prototype.daterangepicker = initDrp;
 
-    Element.prototype.daterangepicker = initDrp;
+    if (typeof Element !== 'undefined') {
+        Element.prototype.daterangepicker = initDrp;
+    }
 
     if (typeof HTMLCollection !== 'undefined') {
         HTMLCollection.prototype.daterangepicker = initDrp;
