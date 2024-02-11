@@ -2363,9 +2363,16 @@
 
     initDrp.defaultOptions = {};
 
-    // HTMLCollection.prototype.daterangepicker = initDrp;
-    // NodeList.prototype.daterangepicker = initDrp;
-    HTMLCollection.prototype.daterangepicker = NodeList.prototype.daterangepicker = initDrp;
+    // // HTMLCollection.prototype.daterangepicker = initDrp;
+    // // NodeList.prototype.daterangepicker = initDrp;
+    // HTMLCollection.prototype.daterangepicker = NodeList.prototype.daterangepicker = initDrp;
+
+    if (typeof HTMLCollection !== 'undefined') {
+        HTMLCollection.prototype.daterangepicker = initDrp;
+    }
+    if (typeof NodeList !== 'undefined') {
+        NodeList.prototype.daterangepicker = initDrp;
+    }
 
     return DateRangePicker;
 }));
